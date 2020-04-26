@@ -21,9 +21,9 @@ import sys
 # In[2]:
 
 
-file_name = 'bolso'      # file_name.sqlite
-db_name = 'bolsonaro'    # database name
-listening = 'bolsonaro'  # query you want to search to
+file_name = 'database'      # file_name.sqlite
+db_name = 'python'    # database name
+listening = 'python'  # query you want to search to
 num_threads = 4          # Number of threads working on processing the tweets
 
 # Either import twitter keys from a config file or write them here
@@ -76,8 +76,6 @@ def process_tweets(status):
     
     conn.commit()
 
-    # slow down the requests
-    time.sleep(2)
 
 
 # In[5]:
