@@ -4,7 +4,7 @@ On this walkthrough I go through all necessary steps to create your own sentimen
 
 Lets begin with data extraction
 
-## Data exctration
+## Data extraction
 
 I created two scripts to extract data from Twitter. First however you have to obtain your API key by following [this tutorial](https://www.smartaddons.com/documentation/key/). The scripts are on this repo.
 
@@ -18,7 +18,7 @@ Search in Twitter for a particular query. This will only return tweets made at t
 
 ## Cleaning data, from sql database to csv
 
-We need to convert the previous sqlite file to a csv, so we can use some anotation tool for labeling. We cant train our own model or test the accuracy of a model without labeled data. [This notebook](https://github.com/Jvmd95/NLP-project-guide/blob/master/Cleaning%20data%20to%20excel.ipynb) explains the necessary steps.
+We need to convert the previous sqlite file to a csv, so we can use some anotation tool for labeling. We cant train our own model or test the accuracy of a model without labeled data. [This notebook](https://github.com/Jvmd95/NLP-project-guide/blob/master/Cleaning%20data%20to%20excel.ipynb) explains the necessary steps. The output is a csv file that you can input on the data labeling tool of your choice.
 
 ## Labeling the data
 
@@ -26,8 +26,8 @@ Labeling the data extracted from Twitter would take a significant amount of time
 
 ## Modeling
 
-Once you have you data labeled you can follow [this personal notebook](https://github.com/Jvmd95/NLP-classification-with-disaster-Tweets/blob/master/NLP%20classification%20disaster%20Tweets.ipynb) I made for a Kaggle competition. The task is a similar classification task, and you can just swap the data from the notebook for the data extracted from Twitter.
+Once you have your data labeled you can follow [this personal notebook](https://github.com/Jvmd95/NLP-classification-with-disaster-Tweets/blob/master/NLP%20classification%20disaster%20Tweets.ipynb) I made for a Kaggle competition to perform modeling. In that notebook I use google BERT, a neural network-based technique for natural language processing that can achieve state of the art accuracy. The task is a similar classification task, and you can just swap the data from the notebook for the data extracted from Twitter.
 
-## Some comments:
+# Some comments:
 
 Needless to say this is a simple sketch of a text classification project, chances are that depending on your project you will need to clean the data in a different way or extract different features from the data, however I hope it helps on getting started.
